@@ -1,0 +1,146 @@
+/**Estilo para o plugin slick**/
+	/*DOTS*/
+    .slick-dotted ul{
+        list-style-type: none;
+        text-align: center;
+        position: relative;
+        margin-top: 30px;
+    }
+    
+    .slick-dotted li{
+        display: inline-block;
+        margin:0 7px;
+    }
+    
+    .slick-dotted button:focus{
+        outline: 0;
+    }
+    
+    .slick-dotted li button{
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+        color: #474747;
+        border-width: 0;
+        background: #474747;
+        opacity: 1;
+        cursor: pointer;
+        
+    }
+    
+    .slick-dotted li button:hover{
+        border: 2px solid #252525;
+    }
+    
+    li.slick-active button{
+        background: #252525;
+        color: #252525;
+    }
+    
+    .slick-slide:focus{outline: none;}
+    
+            /*ARROWS*/
+    
+            .slick-arrow {
+                width: 100%;
+                position: relative;
+                font-size: 0;
+                border: 0;
+                background-color: #61616100;
+            }
+            
+            .slick-next:hover{
+                background-image: url(../IMAGENS/seta-right-hover.png);
+            }
+            
+            .slick-prev:hover{
+                background-image: url(../IMAGENS/seta-left-hover.png);
+            }
+            
+            .slick-next {
+                position: absolute;
+                right: -80px;
+                top: 320px;
+                background-image: url(../IMAGENS/seta-right.png);
+                background-size: 100% 100%;
+                height: 32px;
+                width: 32px;
+                cursor: pointer;
+            }
+            .slick-prev {
+                position: absolute;
+                left: -80px;
+                top: 320px;
+                background-image: url(../IMAGENS/seta-left.png);
+                background-size: 100% 100%;
+                height: 32px;
+                width: 32px;
+                cursor: pointer;
+            }
+            
+            button.slick-disabled {
+                opacity: 0.5;
+            }
+                    
+    
+    /****/
+
+    /**Estilo para plugin waypoints**/
+
+    .fadeInUp {
+        opacity: 0;
+        animation: fadeInUp 1s forwards;
+      }
+      
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+    .sessao1 .container{
+        opacity: 0; /* FADE IN UP*/
+    }
+
+    section.sessao3 .container{
+    opacity: 0; /* FADE IN UP*/
+    }
+
+    .imagem-sessao4{
+        opacity: 0; /* FADE IN UP*/
+    }
+
+    .info-sessao4{
+        opacity: 0; /* FADE IN UP*/
+    }
+
+    .section.sessao5 .container{
+        opacity: 0; /* FADE IN UP*/
+    }
+
+    .sessao6 .container{
+        opacity: 0; /* FADE IN UP*/
+    
+     }
+
+     section.sessao7 .wraper{
+        opacity: 0; /* FADE IN UP*/
+    }
+    
+    section.sessao7 .form-wraper{
+        opacity: 0; /* FADE IN UP*/
+    }
+    
+    section.sessao8 .container{
+        opacity: 0; /* FADE IN UP*/
+    }
+
+    div.footer{
+        opacity: 0; /* FADE IN UP*/
+    }
+    
+
+    /****/

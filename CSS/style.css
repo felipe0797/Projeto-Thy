@@ -1,0 +1,601 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+   height: 100%;
+}
+
+@font-face {
+   font-family: Sugar;
+   src: url(../FONTES/sugar.ttf);
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: url(../FONTES/SansSerifExbFLF.otf);
+ }
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    padding-top: 70px;
+    background-color: black
+}
+
+.logo{
+    text-align: left;
+    position: relative;
+    bottom: 35px;
+    padding-left: 4%;
+}
+
+
+/* / * / */
+
+
+/* BANNER */
+
+/* JQUERY BACKGROUND-VIDEO*/
+    #background-video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  #background-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+  
+/**/
+section.banner{
+    width: 100%;
+    height: calc(100vh - 70px);
+    min-height: 400px;
+    max-height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-image: url(../IMAGENS/fundo1.png);*/
+    background-color: black;
+}
+
+section.banner .texto-banner{
+        width: 50%;
+        position: relative;
+        top: 150px;
+        float: left;
+        padding: 0 2%;
+        z-index: 1;
+}
+
+.texto-single{
+    width: 600px;
+    
+}
+
+.texto-banner h2{
+    color: white;
+    font-size: 50px;
+    line-height: 50px;
+    max-width: 600px;
+
+}
+
+.texto-banner p{
+    color: white;
+    font-size: 22px;
+    line-height: 50px;
+    max-width: 600px;
+
+}
+
+.texto-banner input[type=button]{
+    margin-top: 10px;
+    margin-left: 40px;
+
+}
+
+.btn1{
+    border-radius: 30px;
+    border: 0;
+    width: 350px;
+    height: 60px;
+    background-color: rgb(0, 207, 105);
+    font-size: 18px;
+    font-family: sugar;
+    cursor: pointer;
+
+}
+
+.btn1:hover{
+    background-color: rgba(0, 207, 105, 0.8);
+    -webkit-animation: shadow-drop-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 207, 105, 0);
+              box-shadow: 0 0 0 0 rgba(0, 207, 105, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 207, 105, 0.45);
+              box-shadow: 0 0 20px 0px rgba(0, 207, 105, 0.45);
+    }
+  }
+  @keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 207, 105, 0);
+              box-shadow: 0 0 0 0 rgba(0, 207, 105, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 207, 105, 0.45);
+              box-shadow: 0 0 20px 0px rgba(0, 207, 105, 0.45);
+    }
+  }
+  
+  
+
+.barras{
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+.barras img:nth-of-type(1){
+    position: absolute;
+    top: 72px;
+    right: 0;
+    border-collapse: collapse;
+}
+
+.barras img:nth-of-type(2){
+    position: absolute;
+    top: 72px;
+    right: 150px;
+    border-collapse: collapse;
+}
+/* / * / */
+
+/* SESSAO1 */
+
+.sessao1{
+    width: 100%;
+	padding:40px 2%;
+	background: #00cf69;
+}
+
+.sessao1 h2{
+    width: 50%;
+	float: left;
+}
+
+.sessao1 p{
+    width: 50%;
+	float: right;
+	color: black;
+	font-size: 19px;
+}
+
+/* / * / */
+
+
+/* SESSAO2 */
+
+section.sessao2{
+    width: 100%;
+    background-color: #616161;
+    position: relative;
+    text-align: center;
+}
+
+section.sessao2 h2{
+    font-size: 28px;
+    padding: 40px 0 0 0;
+}
+
+section.sessao2 .container{
+    max-width: 1000px;
+}
+
+section.sessao2 .colunas-single{
+    width: calc(100% / 3);
+    height: 600px;
+    float: left;
+    position: relative;
+    border: 10px solid #616161;
+    border-radius: 30px;
+    background-image: url(../IMAGENS/Crescimento\ Acelerado.png);
+    background-size: 100% 100%;
+}
+
+section.sessao2 .setas{
+    width: 100%;
+    position: relative;
+    padding: 10px 30px;
+}
+
+/* / * / */
+
+/* SESSAO3 */
+
+section.sessao3{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    padding: 30px 2%;
+}
+
+section.sessao3 .part1{
+    width: 100%;
+    display: inline-block;
+    padding: 30px 2% 15px 2%;
+}
+
+section.sessao3 .part1 h2{
+    font-size: 25px;
+}
+
+.part2-coluna{
+    width: 100%;
+    padding: 8px 2%;
+}
+
+.part2-single{
+    width: calc(100% / 3);
+    float: left;
+    padding: 8px 2% 10px 2%;
+}
+
+.part2-single h2{
+    font-size: 25px;
+}
+
+.part2-single p{
+    font-size: 17px;
+    max-width: 200px;
+    display: inline-block;
+}
+
+/* / * / */
+
+/* SESSAO-4 */
+
+section.sessao4{
+    width: 100%;
+    height: 380px;
+    background-color: black;
+}
+
+
+.imagem-sessao4{
+    width: 50%;
+    padding-top: 300px;
+    position: relative;
+    top: 20px;
+    float: right;
+    background-image: url(../IMAGENS/fundo2.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.info-sessao4{
+    width: 50%;
+    position: relative;
+    color: white;
+    float: left;
+    text-align: left;
+    padding: 0 2%;
+}
+
+.info-sessao4 h2{
+    color: white;
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 60px;
+}
+
+.info-sessao4 p{
+    color: #ccc;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.info-sessao4 input[type=button]{
+    margin-top: 30px;
+}
+
+/* / * / */
+
+/*  SESSAO-5 */
+
+section.sessao5{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.s5-part1 h2{
+    font-size: 36px;
+    color: black;
+    padding: 30px;
+}
+
+.s5-part2{
+    width: 100%;
+
+}
+
+.s5-img-part2{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-size: contain;
+}
+
+
+.s5-info-part2{
+    width: calc(100% - 100px);
+    height: 100px;
+    float: right;
+    text-align: left;
+}
+
+.s5-info-part2 h2{
+    font-size: 24px;
+    color: #00cf69;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+}
+
+.s5-info-part2 p{
+    font-size: 18px;
+    margin-top: 8px;
+    line-height: 19px;
+    position: relative;
+    top: 10px;
+}
+
+/* / * / */
+
+/* SESSAO 6*/
+.sessao6{
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    position: relative;
+ }
+ 
+ .sessao6 h2{
+    font-size: 28px;
+    padding: 40px 0 0 0;
+ }
+ 
+ .sessao6 .container{
+    max-width: 1000px;
+
+ }
+ 
+ section.sessao6 .colunas-single{
+    width: calc(100% / 3);
+    height: 600px;
+    float: left;
+    position: relative;
+    border: 10px solid rgb(230, 230, 230);
+    border-radius: 30px;
+    background-image: url(../IMAGENS/Crescimento\ Acelerado.png);
+    background-size: 100% 100%;
+ }
+ 
+ section.sessao6 .setas{
+    width: 100%;
+    padding: 36px;
+    position: relative;
+ }
+ 
+
+/* / * / */
+
+
+/* SESSAO 7 */
+
+section.sessao7 .wraper{
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    background-color: rgb(27 27 27);
+}
+
+section.sessao7 .text-wraper{
+    width: 50%;
+    padding: 60px;
+}
+
+section.sessao7 .text-single{
+    float: right;
+}
+
+
+section.sessao7 .text-wraper h2{
+    font-size: 28px;
+    text-align: left;
+    line-height: 30px;
+    color: white;
+    max-width: 400px;
+}
+
+section.sessao7 .text-wraper p{
+    font-size: 19px;
+    margin-top: 15px;
+    text-align: left;
+    color: #bbbbbb;
+    max-width: 400px;
+}
+
+section.sessao7 .form-wraper{
+    width: 50%;
+}
+
+section.sessao7 form{
+    max-width: 400px;
+    float: left;
+    padding: 60px;
+}
+
+section.sessao7 form .input-wraper{
+    margin-top: 15px;
+}
+
+section.sessao7 form .input-wraper:first-of-type{
+    margin-top: 0;
+}
+
+section.sessao7 form input[type=text],input[type=email],input[type=tel]{
+    width: 380px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 0;
+    padding: 15px;
+}
+
+
+section.sessao7 form input::-webkit-input-placeholder { 
+    color: #757575;
+ }
+ 
+
+section.sessao7 form select{
+    width: 380px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #757575;
+    border: 0;
+    padding-left: 15px;
+}
+
+section.sessao7 .seleção option{
+        font-size: 15px;
+        background-color: #e9e9e9;
+        color: #333;
+}
+
+section.sessao7 .btn1{
+    margin-top: 30px;
+    display: inline-block;
+}
+
+/* / * / */
+
+/* SESSAO 8 */
+
+section.sessao8{
+    background-color: rgba(230, 230, 230, 0.8);
+}
+
+section.sessao8 .container{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 2% 30px 2%;
+}
+
+section.sessao8 .container h2:nth-of-type(1){
+    text-align: center;
+    padding: 40px;
+    display: inline-block;
+}
+
+section.sessao8 .info-colunas{
+    width: 100%;
+    padding: 30px;
+    text-align: left;
+}
+
+
+section.sessao8 .info-colunas ul li{
+    width: 50%;
+    float: left;
+    padding: 10px;
+    list-style: none;
+    list-style-position: inside;
+}
+
+section.sessao8 .info-colunas ul li::before {
+    content: "\2022";
+    color: #00cf69;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em;
+  }
+
+section.sessao8 .container h2:nth-of-type(2){
+    text-align: center;
+    padding: 40px;
+    display: inline-block;
+}
+
+
+/* / * / */
+
+/* FOOTER */
+
+    div.footer{
+        text-align: center;
+        padding: 30px;
+        opacity: 0; /* FADE IN UP*/
+    }
+
+    div.footer p{
+        margin-top: 10px;
+    }
+        
+    div.footer img{
+        position: relative;
+    }
+
+
+    div.footer img:hover{
+        top: 3px;
+    }
+
+
+/* / * / */
